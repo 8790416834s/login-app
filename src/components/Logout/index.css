@@ -1,1 +1,4 @@
-/* Write your CSS here */
+.button {
+  cursor: pointer;
+  outline: none;
+}

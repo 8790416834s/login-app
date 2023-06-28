@@ -1,12 +1,14 @@
 import './index.css'
 
-const Login = () => {
-  const onChange = () => {
-    changeOver()
+const Login = props => {
+  const {onLogin} = props
+
+  const onChangeLogin = () => {
+    onLogin()
   }
 
   return (
-    <button type="button" onClick="onChange">
+    <button type="button" onClick={onChangeLogin}>
       Login
     </button>
   )
